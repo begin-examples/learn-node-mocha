@@ -1,4 +1,4 @@
-# JavaScript Testing with NodeJS and Mocha on Begin.com
+<img src="https://static.begin.app/learn-node-mocha/readme-banner.png" width="766">
 
 ## Deploy your own
 
