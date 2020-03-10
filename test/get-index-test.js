@@ -5,18 +5,16 @@ let assert = require('assert')
 
 describe('mocha app', () => {
 
-  // setup the sandbox
-  let end
-
+  // start and end sandbox to execute tests
   before(async () => {
-    end = await sandbox.start()
+    await sandbox.start({ quiet: true})
   })
 
   after(async () => {
-    await end()
+    await sandbox.end()
   })
 
-  // the test suite
+  // makes sure a GET response has no errors
   describe('@http', function() {
     it('should get /', async () => {
       let url = 'http://localhost:3333'
@@ -24,7 +22,8 @@ describe('mocha app', () => {
       assert.ok(result)
     })
   })
-
+  
+  // tests that @begin/data can write a table
   describe('@begin/data', function() {
     it('data.set', async () => {
       let result = await data.set({table: 'tmp'})
@@ -32,6 +31,7 @@ describe('mocha app', () => {
       console.log(result)
     })
 
+    // tests that @begin/data can read the table
     it('data.get', async () => {
       let result = await data.get({table: 'tmp'})
       assert.equal(result.length, 1)

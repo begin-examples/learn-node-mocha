@@ -1,15 +1,12 @@
 {
-  "name": "arc-example-mocha",
+  "name": "begin-mocha-example",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Begin example: learn JavaScript testing with Node.js and Mocha",
   "scripts": {
     "start": "npx sandbox",
-    "test": "NODE_ENV=testing QUIET=1 mocha"
+    "test": "mocha"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "@architect/sandbox": "^1.7.2",
     "@begin/data": "^1.2.0",
