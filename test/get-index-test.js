@@ -22,7 +22,7 @@ describe('mocha app', () => {
       assert.ok(result)
     })
   })
-  
+
   // tests that @begin/data can write a table
   describe('@begin/data', function() {
     it('data.set', async () => {
