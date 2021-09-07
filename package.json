@@ -8,7 +8,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@architect/sandbox": "^4.0.1",
+    "@architect/sandbox": "^4.0.2",
     "@begin/data": "^2.0.1",
     "mocha": "^9.1.0",
     "tiny-json-http": "^7.3.0"
