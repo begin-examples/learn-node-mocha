@@ -10,7 +10,7 @@
   "dependencies": {
     "@architect/sandbox": "^4.5.2",
     "@begin/data": "^3.0.4",
-    "mocha": "^9.1.3",
+    "mocha": "^9.2.0",
     "tiny-json-http": "^7.3.1"
   }
 }
